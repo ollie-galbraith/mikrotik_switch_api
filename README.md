@@ -7,7 +7,7 @@ For a project that I'm working on I needed to have access to programatically and
 
 After lots of clicking buttons, changing text, and playing around with Firefox Debug panel, I have reverse engineered the API from hex and binary to integers and strings. At least I reverse engineered the main pages haha. 
 
-This is a repo containing a Powershell Module (and in the future some Python code and Ansible Collections) to make the correct calls to the API. 
+This is a repo containing a Powershell Module and basic Python/Ansible code to make the correct calls to the API. 
 
 ### To Note
 This is a side project for me, and I have only manaaged to test the code on three switch models
