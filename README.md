@@ -9,7 +9,15 @@ After lots of clicking buttons, changing text, and playing around with Firefox D
 
 This is a repo containing a Powershell Module and basic Python/Ansible code to make the correct calls to the API. 
 
-### To Note
+## FAQ
+
+#### How does the API work
+
+While I dont know the ins and outs of the inner workings of the API, there is enough information from the JSON-like responses depending on the request that its easy enough to reverse engineer. 
+
+It is mostly hex numbers and bitmasks, which need to be converted to be able to read them as a human. Thanks to this [forum post](https://forum.mikrotik.com/viewtopic.php?t=172802) for the basic information to get going
+
+## To Note
 This is a side project for me, and I have only manaaged to test the code on three switch models
  - [CRS328-24P-4S+RM](https://mikrotik.com/product/crs328_24p_4s_rm)
  - [CRS309-1G-8S+IN](https://mikrotik.com/product/crs309_1g_8s_in)
