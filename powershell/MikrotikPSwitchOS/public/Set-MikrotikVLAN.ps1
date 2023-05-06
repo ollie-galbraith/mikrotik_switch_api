@@ -43,7 +43,7 @@ Function Set-MikrotikVLAN
                 If($VLANModeArray[$PortNumber - 1] -ne $VLANMode)
                     {
                         #Sets a new VLAN mode if the selected port (via -PortNumber) doesnt match the specified VLAN mode (-VLANMode)
-                        $NewVLANMode = Convert-MikrotikVLANMode -String $VLANMode
+                        $NewVLANMode = Convert-MikrotikVLANHexCodes -Type VLANMode -String $VLANMode
                         $MikrotikConfig.vlan[$PortNumber - 1] = $NewVLANMode
 
                         $HardConfirm = $true

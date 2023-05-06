@@ -22,8 +22,8 @@ Function Convert-MikrotikVLAN
                 $PortOptions = [pscustomObject]@{
                     PortNumber = $Links[$PortNumber].PortNumber
                     PortName = $Links[$PortNumber].PortName
-                    VLANMode = "$(Convert-MikrotikVLANMode -Hex $InputObject.vlan[$PortNumber])"
-                    VLANReceive = "$(Convert-MikrotikVLANReceive -Hex $InputObject.vlni[$PortNumber])"
+                    VLANMode = "$(Convert-MikrotikVLANHexCodes -Type VLANMode -Hex $InputObject.vlan[$PortNumber])"
+                    VLANReceive = "$(Convert-MikrotikVLANHexCodes -Type VLANReceive -Hex $InputObject.vlni[$PortNumber])"
                     VLANID = ConvertFrom-HexToInt -Hex $InputObject.dvid[$PortNumber]
                     ForceVLANID = $ForceVLAN[$PortNumber]
                 }
